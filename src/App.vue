@@ -1,19 +1,14 @@
 <script setup>
-import { useRoute, useRouter } from 'vue-router'
-
-const router = useRouter()
-const route = useRoute()
-console.log(route, router)
+// import { useRoute, useRouter } from 'vue-router'
+// import { useUserStore } from '@/stores'
+// const router = useRouter()
+// const route = useRoute()
+// console.log(route, router)
+// const userStore = useUserStore()
 </script>
 
 <template>
-  <div>
-    <el-button type="primary">Primary</el-button>
-    <el-button type="success">Success</el-button>
-    <el-button type="info">Info</el-button>
-    <el-button type="warning">Warning</el-button>
-    <el-button type="danger">Danger</el-button>
-  </div>
+  <router-view></router-view>
 </template>
 
 <style scoped></style>
